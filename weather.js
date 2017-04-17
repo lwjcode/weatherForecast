@@ -18,8 +18,8 @@
 	//设置延时，因为获得当前城市所在地是异步的
 	setTimeout(function(){
 		var urls = []; 
-	    urls[0] = 'http://sapi.k780.com/?app=weather.future&appkey=10003&sign=b59bc3ef6191eb9f747dd4e83c99f2a4&format=json&jsoncallback=getWeather_week&weaid=' + encodeURI(cityName);
-	    urls[1] = 'http://api.map.baidu.com/telematics/v3/weather?output=json&ak=FK9mkfdQsloEngodbFl4FeY3&callback=getTodayWeather&location=' + encodeURI(cityName);
+	    urls[0] = 'https://sapi.k780.com/?app=weather.future&appkey=10003&sign=b59bc3ef6191eb9f747dd4e83c99f2a4&format=json&jsoncallback=getWeather_week&weaid=' + encodeURI(cityName);
+	    urls[1] = 'https://api.map.baidu.com/telematics/v3/weather?output=json&ak=FK9mkfdQsloEngodbFl4FeY3&callback=getTodayWeather&location=' + encodeURI(cityName);
 		jsonp(urls[0]);  //jsonp跨域请求
 		jsonp(urls[1]);
 	}, 1000);
@@ -78,8 +78,8 @@
 		var cityname = document.getElementById('input-weather').value;
 		if (cityname != ''){
 			var urls = []; 
-	    	urls[0] = 'http://sapi.k780.com/?app=weather.future&appkey=10003&sign=b59bc3ef6191eb9f747dd4e83c99f2a4&format=json&jsoncallback=getWeather&weaid=' + encodeURI(cityname);
-	    	urls[1] = 'http://api.map.baidu.com/telematics/v3/weather?output=json&ak=FK9mkfdQsloEngodbFl4FeY3&callback=getTodayWeather&location=' + encodeURI(cityname);
+	    	urls[0] = 'https://sapi.k780.com/?app=weather.future&appkey=10003&sign=b59bc3ef6191eb9f747dd4e83c99f2a4&format=json&jsoncallback=getWeather&weaid=' + encodeURI(cityname);
+	    	urls[1] = 'https://api.map.baidu.com/telematics/v3/weather?output=json&ak=FK9mkfdQsloEngodbFl4FeY3&callback=getTodayWeather&location=' + encodeURI(cityname);
 			jsonp(urls[0]);
 			jsonp(urls[1]);
 		}
