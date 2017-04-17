@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>天气查询</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="weather.css">
+</head>
+<body>
+
+<nav class="navbar">
+	<hearder class="title">天气查询</hearder>
+	<div class="dialog">
+		<div class="input-dialog">
+			<input type="text" name="input-weather" id="input-weather" placeholder="请输入要查询的城市名称">
+		</div>
+		<div class="search-btn">
+			<button id="search">查询</button>
+		</div>
+	</div>
+</nav>
+
+<article class="mainbody">
+	<section class="date-place">
+		<div class="date">
+		</div>
+		<div class="place"></div>
+	</section>
+	<section class="today-weather">
+		<div class="weather-condition">
+			<div class="weather-icon">
+				<div class="day">
+					<figure>
+						<figcaption>白天</figcaption>
+						<img src="" id="day-pic">
+					</figure>
+				</div>
+				<div class="night">
+					<figure>
+						<figcaption>夜间</figcaption>
+						<img src="" id="night-pic">
+					</figure>
+				</div>
+			</div>
+			<div class="weather-mess">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<div class="warmtips">
+			<header>温馨提示</header>
+			<div>
+				<span>穿衣指数：</span>
+				<p></p>
+			</div>
+			<div>
+				<span>洗车指数：</span>
+				<p></p>
+			</div>
+			<div>
+				<span>感冒指数：</span>
+				<p></p>
+			</div>
+			<div>
+				<span>运动指数：</span>
+				<p></p>
+			</div>
+			<div>
+				<span>紫外线强度指数：</span>
+				<p></p>
+			</div>
+		</div>
+	</section>
+	<section class="week-weather">
+		<div class="item" id="Monday">
+			<img src="">
+			<div class="item-mess">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<div class="item" id="Tuesday">
+			<img src="">
+			<div class="item-mess">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<div class="item" id="Wednesday">
+			<img src="">
+			<div class="item-mess">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<div class="item" id="Thursday">
+			<img src="">
+			<div class="item-mess">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<div class="item" id="Friday">
+			<img src="">
+			<div class="item-mess">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<div class="item" id="Saturday">
+			<img src="">
+			<div class="item-mess">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<div class="item" id="Sunday">
+			<img src="">
+			<div class="item-mess">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</section>
+</article>
+
+
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=A63e90def3d0f5488ab9032056429a0d"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.js"></script>
+<script type="text/javascript" src="weather.js"></script>
+<script type="text/javascript">
+	
+
+</script>
+
+
+
+</body>
+</html>
